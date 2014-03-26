@@ -1,0 +1,122 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://preprod.fourchette-et-bikini.fr/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "b"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "#user-login > div > div.item-list > ul > li.first > a[title=\"Créer un nouveau compte utilisateur.\"]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-profile-main-field-maz-profil-civilite-und-mr--2"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-name--2"
+      },
+      "text": "Pseudo"
+    },
+    {
+      "type": "sendKeysToElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-profile-main-field-maz-profil-nom-und-0-value--2"
+      },
+      "text": "\\9"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-profile-main-field-maz-profil-prenom-und-0-value--2"
+      },
+      "text": "Terra"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-profile-main-field-maz-profil-nom-und-0-value--2"
+      },
+      "text": "Vincent"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-mail--2"
+      },
+      "text": "vt3ktek@free.fr"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-pass-pass1--2"
+      },
+      "text": "password"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-pass-pass2--2"
+      },
+      "text": "password"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "edit-profile-main-field-maz-profil-ville-und-0-value--2"
+      },
+      "text": "Marck"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "id",
+        "value": "edit-field-inscrit-newsletter-und--2"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "edit-submit--2"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "div.messages.status"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": []
+}
