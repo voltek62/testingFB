@@ -4,11 +4,6 @@
   "formatVersion": 2,
   "steps": [
     {
-      "type": "storeEval",
-      "script": "Math.floor(Math.random()*11111111111)",
-      "variable": "${usermail}"
-    },
-    {
       "type": "get",
       "url": "http://www.fourchette-et-bikini.fr/"
     },
@@ -33,6 +28,16 @@
         "value": "edit-name"
       },
       "text": "${username}"
+    },
+    {
+      "type": "storeEval",
+      "script": "Math.floor(Math.random()*11111111111)",
+      "variable": "username"
+    },
+    {
+      "type": "storeEval",
+      "script": "Math.floor(Math.random()*11111111111)",
+      "variable": "usermail"
     },
     {
       "type": "setElementText",
