@@ -4,6 +4,11 @@
   "formatVersion": 2,
   "steps": [
     {
+      "type": "storeEval",
+      "script": "Math.floor(Math.random()*11111111111)",
+      "variable": "${usermail}"
+    },
+    {
       "type": "get",
       "url": "http://www.fourchette-et-bikini.fr/"
     },
@@ -27,7 +32,7 @@
         "type": "id",
         "value": "edit-name"
       },
-      "text": "useername"
+      "text": "${username}"
     },
     {
       "type": "setElementText",
@@ -35,7 +40,7 @@
         "type": "id",
         "value": "edit-mail"
       },
-      "text": "mail@free.fr"
+      "text": "${usermail}"
     },
     {
       "type": "setElementText",
@@ -116,8 +121,23 @@
     }
   ],
   "data": {
-    "configs": {},
+    "configs": {
+      "manual": {
+        "userName": "return Math.floor(Math.random()*11111111111)",
+        "userMail": "test@free.fr"
+      },
+      "none": {}
+    },
     "source": "none"
   },
-  "inputs": []
+  "inputs": [
+    [
+      "userName",
+      "string"
+    ],
+    [
+      "userMail",
+      "string"
+    ]
+  ]
 }
